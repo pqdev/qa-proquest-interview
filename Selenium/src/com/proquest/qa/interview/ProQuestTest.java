@@ -2,28 +2,41 @@ package com.proquest.qa.interview;
 
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  * TODO:
  *   Your tasks are to complete the below using the Selenium WebDriver API.
  *   ===================================================================================
- *   1. Navigate to http://proquest.com/ using your browser of choice
- *   2. Using the search bar found at the top, search for "dissertation asap"
- *   3. Navigate to the result titled "Dissertations ASAP" by clicking the link
- *   4. Using jUnit, assert that the coverage dates for this product is "1861 - Present"
- *   5. Click the "International News" link at the top, then click "Italiano"
- *   6. Click the "Careers" link in the top navigation bar.
- *   7. Click the "Open Positions" button
+ *  public static void main(String[] args) {
+        WebDriver driver = new FirefoxDriver();
+        String baseUrl = "http://proquest.com/ "
+        String tagName = "";
+ 
+        driver.get(baseUrl);
+        tagName = driver.findElement(By.id("asdf")).getTagName();
+        System.out.println(tagName);
+        driver.close();
+        System.exit(0);
+ *   1. driver.get(" http://proquest.com/ ");
+ *   2. webElement d1=driver.FindElement(By.name( "dissertation asap"));
+ *   3. driver.findElement(By.LinkText( "Dissertations ASAP") );
+ *   4. Assert.assertEquals(text,""1861 - Present"); 
+ *   5. driver.find_element_by_link_text(‘International News’);
+ *       driver.findElement(By.LinkText("Italiano"));
+ *   6. driver.findElement(By.LinkText("Careers");
+ *   7. driver.findElement(By.id("openposition")).click();
  *   8. Fill out the form
- *    a. Set location to "Ann Arbor, MI"
- *    b. Set Description Keywords to "this will not be found"
- *   9. Click the Search button
- *   10. Validate that no jobs are found
- *   11. Go back one page
+ *    a. driver.findElement(By.Id("location").sendkeys( "Ann Arbor, MI");
+ *    b. driver.findElement(By.Id("asgj").sendkeys( "this will not be found");
+ *   9. driver.findElement(By.id("click")).click();
+ *   10. String bodyText = driver.findElement(By.tagName("body")).getText();
+        Assert.assertTrue("No Jobs are found", bodyText.contains(text));
+ *   11. driver.navigate().back();
  *   12. Fill out the form
- *     a. Set location to "Any"
- *     b. Set Description Keywords to "software test engineer"
- *     c. Validate that AT LEAST one job appears
+ *     a. driver.findElement(By.Id("location").sendkeys( "Ann Arbor, MI");
+ *     b. driver.findElement(By.Id("sdfg").sendkeys( "software test engineer");
+ *     c. assertTrue(Page.getAlljobs().contains("Reason: Software test engineer");
  *   ===================================================================================
  *   
  *   Bonus Points!
