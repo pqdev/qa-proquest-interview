@@ -6,6 +6,11 @@ import org.openqa.selenium.WebDriver;
 /**
  * TODO:
  *   Your tasks are to complete the below using the Selenium WebDriver API.
+ *
+ *   Please put your code at the `// TODO: Start here` (found below)
+ *
+ *   Your goal of this exercise, is to make a compilable, runnable, and passing jUnit test using
+ *   Selenium.  The test must also be idempotent!
  *   ===================================================================================
  *   1. Navigate to http://proquest.com/ using your browser of choice
  *   2. Using the search bar found at the top, search for "dissertation asap"
@@ -25,7 +30,7 @@ import org.openqa.selenium.WebDriver;
  *     b. Set Description Keywords to "software test engineer"
  *     c. Validate that AT LEAST one job appears
  *   ===================================================================================
- *   
+ *
  *   Bonus Points!
  *   + Use Only CSS Selectors
  */
