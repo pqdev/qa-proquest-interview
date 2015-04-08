@@ -13,10 +13,10 @@ import org.openqa.selenium.WebDriver;
  *   Selenium.  The test must also be idempotent!
  *   ===================================================================================
  *   1. Navigate to http://proquest.com/ using your browser of choice
- *   2. Using the search bar found at the top, search for "dissertation asap"
- *   3. Navigate to the result titled "Dissertations ASAP" by clicking the link
- *   4. Using jUnit, assert that the coverage dates for this product is "1861 - Present"
- *   5. Click the "International News" link at the top, then click "Italiano"
+ *   2. Using the search bar found at the top, search for "dissertation"
+ *   3. Navigate to the result titled "ProQuest Dissertation and Theses Dissemination" by clicking the link
+ *   4. Using jUnit, assert that the first item in the key facts list is "Multidisciplinary"
+ *   5. Click the "News" link at the top, then click "Italiano"
  *   6. Click the "Careers" link in the top navigation bar.
  *   7. Click the "Open Positions" button
  *   8. Fill out the form
