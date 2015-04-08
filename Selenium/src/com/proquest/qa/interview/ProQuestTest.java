@@ -16,16 +16,17 @@ import org.openqa.selenium.WebDriver;
  *   2. Using the search bar found at the top, search for "dissertation"
  *   3. Navigate to the result titled "ProQuest Dissertation and Theses Dissemination" by clicking the link
  *   4. Using jUnit, assert that the first item in the key facts list is "Multidisciplinary"
- *   5. Click the "News" link at the top, then click "Italiano"
- *   6. Click the "Careers" link in the top navigation bar.
- *   7. Click the "Open Positions" button
- *   8. Fill out the form
+ *   5. Click the "News" link at the top
+ *   6. Select "Italiano" from the language dropdown on the left.
+ *   7. Click the "Careers" link in the top navigation bar.
+ *   8. Click the "Open Positions" button
+ *   9. Fill out the form
  *    a. Set location to "Ann Arbor, MI"
  *    b. Set Description Keywords to "this will not be found"
- *   9. Click the Search button
- *   10. Validate that no jobs are found
- *   11. Go back one page
- *   12. Fill out the form
+ *   10. Click the Search button
+ *   11. Validate that no jobs are found
+ *   12. Go back one page
+ *   13. Fill out the form
  *     a. Set location to "Any"
  *     b. Set Description Keywords to "software test engineer"
  *     c. Validate that AT LEAST one job appears
